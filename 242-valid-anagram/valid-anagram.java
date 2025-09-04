@@ -3,16 +3,12 @@ class Solution {
         if (s.length()!=t.length()){
             return false;
         }
-        String[] str1 = s.split("");
-        String[] str2 = t.split("");
+        char[] arr1 = s.toCharArray();
+        char[] arr2 = t.toCharArray();
 
-        Arrays.sort(str1);
-        Arrays.sort(str2);
-        for(int i=0;i<str1.length;i++){
-            if(!str1[i].equals(str2[i])){
-                return false;
-            }
-        }
-        return true;
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        return Arrays.equals(arr1, arr2);
     }
 }
