@@ -3,8 +3,8 @@ import java.util.*;
 class Solution {
     private List<List<String>> result;
     private boolean[] cols;
-    private boolean[] diag1; // row - col
-    private boolean[] diag2; // row + col
+    private boolean[] diag1; 
+    private boolean[] diag2; 
     private char[][] board;
 
     public List<List<String>> solveNQueens(int n) {
