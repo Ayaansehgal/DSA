@@ -22,7 +22,6 @@ class Solution {
     int d=len-n+1;
     int i=0;
     while(i<(d-1)){
-        curr=curr.next;
         prev=prev.next;
         i++;
     }
