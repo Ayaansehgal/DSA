@@ -8,7 +8,6 @@ class Solution {
             map.putIfAbsent(temp,new ArrayList<>());
             map.get(temp).add(s);
         }
-    return new ArrayList<>(map.values());
-
+        return new ArrayList<>(map.values());
     }
 }
