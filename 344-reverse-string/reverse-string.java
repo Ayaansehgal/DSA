@@ -1,14 +1,14 @@
 class Solution {
-    public void helper(char s[],int st,int e){
-        if(st>=e){
-            return;
-        }
-        char t=s[st];
-        s[st]=s[e];
-        s[e]=t;
-        helper(s,st+1,e-1);
-    }
+    
     public void reverseString(char[] s) {
-        helper(s,0,s.length-1);
+        int i=0,j=s.length-1;
+        while(i<j){
+            char temp=s[i];
+            s[i]=s[j];
+            s[j]=temp;
+            i++;
+            j--;
+        }
+        
     }
 }
